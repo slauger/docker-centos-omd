@@ -4,7 +4,7 @@ MAINTAINER Simon Lauger <simon@lauger.name>
 LABEL org.label-schema.url="https://github.com/slauger/docker-centos-omd" \
       org.label-schema.name="docker-centos-omd"
 
-ENV OMD_SITENAME="monitoring"
+ARG OMD_SITENAME="monitoring"
 
 RUN yum install -y epel-release && \
     yum upgrade -y && \
